@@ -223,7 +223,7 @@ VOID EnumLocalGroupMembers(std::vector <std::wstring> vwsArgs) {
 		return;
 	}
 
-	_int64 i = 0;
+	size_t i = 0;
 	while (i < vwsArgs.size()) {
 		if (vwsArgs[i] == L"-h") {
 			PrintUsage();
@@ -283,7 +283,7 @@ VOID EnumLocalGroupMembers(std::vector <std::wstring> vwsArgs) {
 		return;
 	}
 
-	UINT j = 0;
+	size_t j = 0;
 	while (j < vTargets.size()) {
 		std::wcout << L"[" << j + 1 << L":" << vTargets.size() << L"] " << vTargets[j] << L"...";
 
