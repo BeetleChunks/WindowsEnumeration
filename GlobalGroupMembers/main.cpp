@@ -221,7 +221,7 @@ VOID EnumGlobalGroupMembers(std::vector <std::wstring> vwsArgs) {
 		return;
 	}
 
-	UINT i = 0;
+	__int64 i = 0;
 	while (i < vwsArgs.size()) {
 		if (vwsArgs[i] == L"-h") {
 			PrintUsage();

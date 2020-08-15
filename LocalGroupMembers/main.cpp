@@ -223,7 +223,7 @@ VOID EnumLocalGroupMembers(std::vector <std::wstring> vwsArgs) {
 		return;
 	}
 
-	UINT i = 0;
+	_int64 i = 0;
 	while (i < vwsArgs.size()) {
 		if (vwsArgs[i] == L"-h") {
 			PrintUsage();
